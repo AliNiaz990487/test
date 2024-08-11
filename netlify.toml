@@ -1,9 +1,7 @@
 [build]
-  command = "npm run build"
+  base = "/"
   publish = "dist"
-
-[[plugins]]
-  package = "@netlify/plugin-monorepo"
+  command = "npm run build"
 
 [[redirects]]
   from = "/web1"
@@ -14,7 +12,6 @@
   from = "/web2"
   to = "/web2/index.html"
   status = 200
-
 
 [[redirects]]
   from = "/"
