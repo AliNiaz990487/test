@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build --prefix web1 && npm run build --prefix web2"
-  },
+  "build": "cd web1 && npm install && npm run build && cd ../web2 && npm install && npm run build"
+},
   "author": "",
   "license": "ISC",
   "description": ""

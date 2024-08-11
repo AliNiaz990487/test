@@ -4,16 +4,19 @@
   command = "npm run build"
 
 [[redirects]]
-  from = "/web1"
+  from = "/web1/*"
   to = "/web1/index.html"
   status = 200
+  force = true
 
 [[redirects]]
-  from = "/web2"
+  from = "/web2/*"
   to = "/web2/index.html"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/"
   to = "/index.html"
   status = 200
+  force = true
