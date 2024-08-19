@@ -1,11 +1,9 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-  "build": "cd web1 && npm install && npm run build && cd ../web2 && npm install && npm run build"
-},
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "private": true,
+  "workspaces": [
+    "app1",
+    "app2"
+  ]
 }
